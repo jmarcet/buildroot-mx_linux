@@ -1,0 +1,13 @@
+diff --git a/xbmc/cores/AudioEngine/Sinks/AESinkALSA.cpp b/xbmc/cores/AudioEngine/Sinks/AESinkALSA.cpp
+index a906d8d..62d78f3 100644
+--- a/xbmc/cores/AudioEngine/Sinks/AESinkALSA.cpp
++++ b/xbmc/cores/AudioEngine/Sinks/AESinkALSA.cpp
+@@ -38,7 +38,7 @@
+ #endif
+ 
+ #define ALSA_OPTIONS (SND_PCM_NONBLOCK | SND_PCM_NO_AUTO_FORMAT | SND_PCM_NO_AUTO_CHANNELS | SND_PCM_NO_AUTO_RESAMPLE)
+-#define ALSA_PERIODS 8
++#define ALSA_PERIODS 16
+ 
+ #define ALSA_MAX_CHANNELS 16
+ static enum AEChannel ALSAChannelMap[ALSA_MAX_CHANNELS + 1] = {
