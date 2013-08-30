@@ -31,4 +31,10 @@
     <subsdelayrange>60</subsdelayrange>
     <audiodelayrange>60</audiodelayrange>
   </video>
+
+<!-- Fix HD playback issues -->
+  <network>
+    <cachemembuffersize>0</cachemembuffersize>
+    <readbufferfactor>4.0</readbufferfactor>
+  </network>
 </advancedsettings>
