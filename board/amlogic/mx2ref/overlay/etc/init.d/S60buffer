@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Cachebuff is a simple script to mount the cache
+# Cachebuffer is a simple script to mount the cache
 # partition and bind it to xbmc's temp directory.
 # Written on 08/30/2013 by croniccorey @xda
 
@@ -27,7 +27,7 @@ if [ ! -e $NEW_CACHE ]
 then
   mkdir -p $NEW_CACHE/temp;
   cp -R $OLD_CACHE/temp/* $NEW_CACHE/temp;
-  chown -R root:root $NEW_CACHE/temp;
+  chown -R root:root $NEW_CACHE;
   chmod -R 755 $NEW_CACHE;
 fi;
   mount -o bind $NEW_CACHE/temp $OLD_CACHE/temp;
